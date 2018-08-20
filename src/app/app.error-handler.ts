@@ -1,6 +1,7 @@
 import {Response} from '@angular/http'
 //import { Observable } from 'rxjs/Rx';
-import { Observable } from 'rxjs'
+import { Observable } from 'rxjs/Observable'
+//import { Observable } from 'rxjs/add/observable/throw'
 
 export class ErrorHandler{
     static handleError (error: Response | any){
