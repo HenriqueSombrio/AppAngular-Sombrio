@@ -9,7 +9,7 @@ export class ShoppingCartService{
     }
 
     addItem(item:MenuItem){
-        let foundItem = this.items.find((mItem)=> mItem.MenuItem.id === item.id)
+        let foundItem = this.items.find((mItem)=> mItem.menuItem.id === item.id)
         if(foundItem){
             foundItem.quantity = foundItem.quantity+1
         }else{
